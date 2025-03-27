@@ -1,85 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-bt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula1 ForntEnd</title>
+    <title>Aula2</title>
 </head>
 
 <body>
-    <h1>Listas</h1>
-    <h2> Listas ordenadas</h2>
-    <ol>
-        <li>Melância</li>
-        <ol>
-            <li>Verde</li>
-            <li>Doce</li>
-        </ol>
-        <li>Banana</li>
-        <li>Coco</li>
-    </ol>
-    <h2>Listas não ordenadas</h2>
-    <ul>
-        <li>Laranja</li>
-        <li>Maça</li>
-        <li>Pêra</li>
-    </ul>
+    <h2> Criação de tabelas no HTML</h2>
+    <h4> Tabela com coluna</h4>
+    <table border="1">
+        <tr>
+            <td>Corolla</td>
+        </tr>
+        <table>
 
-    <h2>Lista ordenadas</h2>
-    <ol type="A">
-    <li>Banana</li>
-    <li>Abacaxi</li>
-    <li>uva</li>
-        <ul type="square">
-            <li>é uma fruta</li>
-            <li>é roxa</li>
-        </ol>
+            <h4> Uma linha e 4 colunas</h4>
+            <table border="1">
+            <tr>
+            <td>Fit</td>
+            <td>Sportage</td>
+            <td>Civic</td>
+            </tr>
+         </table>   
 
-    <h2>Lista de descrição</h2>
-    <d1>
-        <dt>Abacaxi</dt>
-        <dd>é uma fruta muito ácida</dd>
-        <dt>Morango</dt>
-        <dd>é vermelho e bom para fazer suco</dd>
-        <dt>Limão</dt>
-        <dd>é verde e ácido</dd>
-    </d1>
-     <h2>Criando links</h2>  
-     <ul>
-        <li> <a href="Lista_de_descricao.html">Lista de descriçao</a></li>
-        <li> <a href="Lista_nao_ordenada.html">Lista não ordenada</a></li>
-        <li> <a href="Lista_ordenada.html">lista de ordenada</a></li>
-        <li> <a href="http://google.com.br">Pesquisar</a></li>
-     </ul>                
-<h2>Links para a propria página</h2>
-<ul>
-    <li> <a href="#info1">Informática</a></li>
-    <li> <a href="#Software">Engenharia de Software</a></li>
-</ul>
+       <h4>Duas linhas com 3 colunos</h4>
 
-<a name="Info1" title="Definição de Informática">
-    <h2>Informática</h2>
-</a>
-<p>
-    Informática é o termo usado para designar um grande conjunto de conhecimentos relativos ao armazenamento, processamento, coleta e transmissão de informação digital. A palavra informática, no entanto, deriva do termo alemão “ O sentido dessa expressão remete à ideia de processamento da informação.
-</p>
-<p>
-    <a href="#">Voltar ao topo da página</a>
-</p>
-<p>
-    <a name="Software" title="Definição de engenharia de Software">
-        <h2>Engenharia de Software</h2>
-        </a>
-        <p>Informática é o termo usado para designar um grande conjunto de conhecimentos relativos ao armazenamento, processamento, coleta e transmissão de informação digital. A palavra informática, no entanto, deriva do termo alemão “ O sentido dessa expressão remete à ideia de processamento da informação.</p>
-        </p>
-        <p>
-            <a href="#">Voltar ao topo da página</a>
-        </p>
-        <h2>Link de email</h2>
-        <p>
-            <a href="malameamarelo@seilaa.com.br">Fale com o autor</a>
-         </p>
-         <h2>Link absoluto para abrir uma nova página</h2>
-         <a href="http://google.com.br" target="_blank">Link absoluto para abrir uma nova página</a>
+       <table border="1">
+            <tr>
+            
+                <td>Up</td>
+                <td>Mobi</td>
+                <td>FordKA</td>
+            
+            </tr>
+            <tr>
+                <td>Fit</td>
+                <td>Sportage</td>
+                <td>Civic</td>
+
+
+            </tr>    
+            </table>
+
+            <h4>Com preenchimento de célula</h4>
+            <table border="1" cellpadding="10">
+                <tr>
+                    <td>Primeira</td>
+                    <td>Linha</td>
+                </tr>    
+                <tr>
+                    <td>Segunda</td>
+                    <td>Linha</td>
+                </tr>    
+    
+            </table>
+            <h4>Cabeçalho de tabela</h4>
+            <table border="1">
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Endereço</th>
+                </tr>
+                <tr>
+                    <td>00 das presença</td>
+                    <td>00</td>
+                    <td>Holy club</td>
+                </tr>
+            </table>
+
+            <h4>Alinhamento de tabela</h4>
+
+        <table border="1" cellpadding="15">
+            <tr>
+                <td valign="top">Topo</td>
+                <td valign="middle">Meio</td>
+                <td valign="bottom">Bottom</td>
+            </tr>
+        </table>
+
+            <h4>Mescladas</h4>
+        <table border="1" cellpadding="10">
+            <tr>
+                <td rowspan="2">Linha1 e Linha2 mescladas</td>
+                <td colspan="2">Coluna2 e Coluna3 mescladas</td>
+            </tr>
+            <tr>
+                <td>Linha2, Coluna2</td>
+                <td>Coluna2, Coluna3</td>
+        </tr>        
+        </table>
+            <h4>Largura</h4>
+        <table border="1">
+            <tr>
+                <td width="100">Largo</td>
+                <td width="200">Outra largura</td>
+            </tr>
+        </table>
+</body>
+
 </html>
