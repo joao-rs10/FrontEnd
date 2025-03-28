@@ -1,32 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #a6ce39;
+        }
+    </style>
 </head>
 <body>
-    <h4>Tabela</h4>
-            <table border="1" cellpadding="10">
-                <tr>
-                    <td>Segmento</td>
-                    <td>Subsegmento</td>
-                    <td>Cliente</td>
-                    <td>Qnt de Licenças</td>
-      </tr>
-      <table border="1" cellpadding="10">
+    <h2 style="text-align: center;">Tabela</h2>
+    <table>
         <tr>
-            <td rowspan="2">Tecnologia</td>
-            <td colspan="">Software</td>
+        <th>Segmento</th>
+        <th>Subsegmento</th>
+        <th>Cliente</th>
+        <th>Qnt de Licenças</th>
+        </tr>
+
+        <tr>
+                <td rowspan="4">Tecnologia</td>
+                <td>Software</td>
+                <td>Empresa A</td>
+                <td>100</td>
         </tr>
         <tr>
-            <td colspan="2">Hardware</td>
-    </tr>        
-    <tr>
-        <td></td>
-    </tr>
+            <td>Software</td>
+            <td>Empresa B</td>
+            <td>150</td>
+        </tr>
+        <tr>
+            <td>Hardware</td>
+            <td>Empresa C</td>
+            <td>1200</Td>
+        </tr>
+        <tr>
+            <td>Hardware</td>
+            <td>Empresa D</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Varejo</td>
+            <td>Eletrônicos</td>
+            <td>Empresa E</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Vestuários</td>
+            <td>Empresa F</td>
+            <td>120</td>
+        </tr>
+        <tr>
+            <td>Supermercados</td>
+            <td>Empresa G</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>Supermercados</td>
+            <td>Empresa H</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Saúde</td>
+            <td>Hospitais</td>
+            <td>Empresa I</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>Hospitais</td>
+            <td>Empresa J</td>
+            <td>180</td>
+        </tr>
+        <tr>
+            <td>Hospitais</td>
+            <td>Empresa K</td>
+            <td>250</td>
+        </Tr>
+        <tr>
+            <td>Planos de saúde</td>
+            <td>Empresa L</Td>
+            <td>150</td>
+        </tr>
+
     </table>
 
-      </table>                   
 </body>
-</html>
