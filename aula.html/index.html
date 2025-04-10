@@ -1,103 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-bt">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula2</title>
+    <title>Formulário</title>
 </head>
-
 <body>
-    <h2> Criação de tabelas no HTML</h2>
-    <h4> Tabela com coluna</h4>
-    <table border="1">
-        <tr>
-            <td>Corolla</td>
-        </tr>
-        <table>
-
-            <h4> Uma linha e 4 colunas</h4>
-            <table border="1">
-            <tr>
-            <td>Fit</td>
-            <td>Sportage</td>
-            <td>Civic</td>
-            </tr>
-         </table>   
-
-       <h4>Duas linhas com 3 colunos</h4>
-
-       <table border="1">
-            <tr>
+    <h1>Formulário</h1>
+    <form autocomplete="off">
+       <p><label for="inome">Nome: </label></p>
+            <p><input type="text" name="nome" id="inome" placeholder="Digite seu nome: "></p>
+        <p><label for="isobrenome">Sobrenome: </label></p>
+            <p><input type="text" name="sobrenome" id="isobrenome" placeholder="Digite seu sobrenome: "></p>
+       <p><label for="iemail">Email:</label></p>
+       <p><input type="email" name="email" id="iemail" placeholder="Digite seu email: "></p>
+       <p><label for="isenha">Senha: </label></p>
+       <p><input type="password" name="senha" id="isenha" placeholder="Digite sua senha: ">    </p>
+       
+       <p>Gênero: </p>
+        <label for="masc"> Masculino</label>
+        <input type="radio" name="genero" id="masc" value="Masculino"><br>
+        <label for="fem"> Feminino</label>
+        <input type="radio" name="genero" id="fem" value="Feminino"><br><br>
+        
+        <p> Jogo favorito: </p>
+        <select id="ijogo" name="jogo">
+            <optgroup label="PC">
+                <option label="Fortnite" value="Fortnite"></option>
+                <option label="R6" value="R6"></option>
+            </optgroup>
+            <optgroup label="Console">
+            <option label="Minecraft" value="Masculino"></option>
+            <option label="Rocket league" value="Rocket league"></option>
+            </optgroup>
+            <optgroup label="Outro"></option>
+            </select>
+           
+            <p>Preferências: </p>
+            <input type="checkbox" name="prefs" id="pref1" value="Newsletter"> Envie-me um newsletter <br>
+            <input type="checkbox" name="prefs" id="pref2" value="Parceiros"> Envie-me oferta de parceiros <br>
+            <input type="checkbox" name="prefs" id="pref3" value="Propagandas"> Envie-me materia de propagandas <br>
             
-                <td>Up</td>
-                <td>Mobi</td>
-                <td>FordKA</td>
-            
-            </tr>
-            <tr>
-                <td>Fit</td>
-                <td>Sportage</td>
-                <td>Civic</td>
-
-
-            </tr>    
-            </table>
-
-            <h4>Com preenchimento de célula</h4>
-            <table border="1" cellpadding="10">
-                <tr>
-                    <td>Primeira</td>
-                    <td>Linha</td>
-                </tr>    
-                <tr>
-                    <td>Segunda</td>
-                    <td>Linha</td>
-                </tr>    
+            <p>Comentário: </p>
+            <textarea rows="7" cols="50" placeholder="Digite seu comentário"></textarea> <br>
     
-            </table>
-            <h4>Cabeçalho de tabela</h4>
-            <table border="1">
-                <tr>
-                    <th>Nome</th>
-                    <th>Telefone</th>
-                    <th>Endereço</th>
-                </tr>
-                <tr>
-                    <td>00 das presença</td>
-                    <td>00</td>
-                    <td>Holy club</td>
-                </tr>
-            </table>
+            Escolha um arquivo para ser enviado:
+            <p><input type="file" name="arquivo"></p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+    </form>
+    <form>
+        <fieldset>
+            <legend>Dados pessoais: </legend>
+            <p>Nome: </p>
+            <input type="text" name="primeironome" placeholder="Digite seu nome: ">
+            <p>Sobrenome</p>
+            <input type="text" name="ultimonome" placeholder="Digite seu sobrenome:">
+            <p>Data de nascimento</p>
+            <input type="date" name="dtnasc">
+        </fieldset>
+        <input type="image" src="Imagem do WhatsApp de 2025-03-14 à(s) 01.36.40_670a3672.jpg" alt="Enivar" width="70" height="70">
+    </form>
 
-            <h4>Alinhamento de tabela</h4>
-
-        <table border="1" cellpadding="15">
-            <tr>
-                <td valign="top">Topo</td>
-                <td valign="middle">Meio</td>
-                <td valign="bottom">Bottom</td>
-            </tr>
-        </table>
-
-            <h4>Mescladas</h4>
-        <table border="1" cellpadding="10">
-            <tr>
-                <td rowspan="2">Linha1 e Linha2 mescladas</td>
-                <td colspan="2">Coluna2 e Coluna3 mescladas</td>
-            </tr>
-            <tr>
-                <td>Linha2, Coluna2</td>
-                <td>Coluna2, Coluna3</td>
-        </tr>        
-        </table>
-            <h4>Largura</h4>
-        <table border="1">
-            <tr>
-                <td width="100">Largo</td>
-                <td width="200">Outra largura</td>
-            </tr>
-        </table>
 </body>
-
 </html>
