@@ -1,0 +1,61 @@
+/* Texto */
+texto-exemplo {
+    color: hotpink; /*Cor de texto*/
+    font-size: 18px;  /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    text-align: center; /* Alinhamento do texto  */
+    text-decoration: underline; /* decoração do texto */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+/* Box Model */
+.box-exemplo {
+    width: 300px;/*Largura*/
+    height: 200px;/*Altura */
+    padding: 20px; /*Espacamento interno */
+    margin: 10px; /*Espaçamento externo */
+    border: 2px solid #ccc; /*Borda */
+    background-color: #f9f9; /*Cor de fundo */
+}
+
+/*Posicionamento */
+ 
+.posicionamento-exemplo {
+    display: block;/*Tipo de exibição*/
+    position: relative;/*Posicionamento*/
+    top: 10px;/*Deslocamento*/
+    left: 20px;/*Deslocamento*/
+    float: inline-start;/*Flutuação*/
+    clear: both;/*Limpar os floats da tela*/
+}
+
+/*Unidades absolutas(fixas)*/
+
+.pixel-exemplo {
+    font-size: 18px;
+}
+
+/*Unidades relativas */
+.percentual-exemplo {
+    width: 50%;
+}
+
+/*Unidade em*/
+.em-exemplo {
+    font-size: 1.2em;/*Relativo ao font-size do elemento pai*/
+}
+
+.rem-exemplo {
+    font-size: 1.2rem; /*Relativo ao font-size do elemento raiz (html) */
+}
+
+.viewport-exemplo {
+    width: 50vw; /*50% da largura do viewport*/
+    height: 30vw; /*30% da altura do viewport */
+}
+
+h1 {
+    color: rgb(119, 119, 175);
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
